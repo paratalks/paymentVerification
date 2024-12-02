@@ -1,0 +1,29 @@
+{
+  "name": "paymentverification",
+  "version": "1.0.0",
+  "description": "backend for payment verification competishun",
+  "main": "/src/index.js",
+  "scripts": {
+    "build": "rimraf dist && npx tsc",
+    "start": "npm run build && node dist/server.js",
+    "dev": "npm run build && concurrently \"npx tsc -w\"  \"nodemon --exec ts-node src/server.ts\""
+  },
+  "author": "Yash",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.1.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "razorpay": "^2.9.5",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
